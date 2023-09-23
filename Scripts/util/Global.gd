@@ -2,7 +2,14 @@ extends Node
 
 var current_scene = {}
 var scene_to_load = ""
+var load_script = ""
 var players = ["Rey", "Dyl"]
+var rule_set = {
+	"mode": "lives",
+	"lives": 3,
+	"time": 8,
+	"friendly_fire": true
+}
 
 
 # Called when the node enters the scene tree for the first time.

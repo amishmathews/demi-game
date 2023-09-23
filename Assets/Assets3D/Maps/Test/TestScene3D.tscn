@@ -8,3 +8,9 @@ albedo_color = Color(0, 0.54902, 0.129412, 1)
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 material_override = SubResource("StandardMaterial3D_pgoqr")
 size = Vector3(300, 0.5, 300)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.94163, 95.9256)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.738467, 0.0814511, -0.669352, -0.321816, 0.82975, 0.456015, 0.592538, 0.55216, -0.586531, 0, 67.7371, 0)
