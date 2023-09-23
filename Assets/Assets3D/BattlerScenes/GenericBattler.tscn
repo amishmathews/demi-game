@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmykr8r1ijsuo"]
+[gd_scene load_steps=4 format=3 uid="uid://bmykr8r1ijsuo"]
+
+[ext_resource type="Texture2D" uid="uid://cim8t4nrhkvr4" path="res://Assets/Sprites/Rey/Idle/Idle_0000.png" id="1_h3q5i"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g6hno"]
 
@@ -12,10 +14,14 @@ albedo_color = Color(1, 0, 0, 1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_g6hno")
 
-[node name="Sprite3D" type="Sprite3D" parent="CharacterBody3D"]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody3D"]
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="CharacterBody3D"]
 visible = false
 material_override = SubResource("StandardMaterial3D_uln61")
+
+[node name="SpriteNode" type="Node3D" parent="CharacterBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="CharacterBody3D/SpriteNode"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.683068, 0, 0)
+texture = ExtResource("1_h3q5i")
